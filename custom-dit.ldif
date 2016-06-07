@@ -1,0 +1,22 @@
+dn: dc=example,dc=com
+objectClass: top
+objectClass: domain
+dc: example
+
+dn: ou=people,dc=example,dc=com
+objectClass: organizationalunit
+objectClass: top
+ou: People
+
+dn: uid=jdoe,ou=people,dc=example,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: mycustomclass
+cn: John Doe
+sn: Doe
+givenName: John Doe
+uid: jdoe@example.com
+mycustomattr: somevalue
+userPassword: password
